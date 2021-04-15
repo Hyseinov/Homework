@@ -37,7 +37,7 @@ class fraction:
 
 Fraction1 = fraction(1, 2)
 Fraction2 = fraction(1, 8)
-fraction3 = Fraction1.mult(Fraction2)
+fraction3 = Fraction1.div(Fraction2)
 print(fraction3.chislitel)
 print("--")
 print(fraction3.znamenatel)

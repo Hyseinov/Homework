@@ -1,0 +1,26 @@
+body {
+    background: #242b2e;
+    text-align: center;
+}
+p {
+    color: orange;
+}
+h1 {
+    color: red;
+}
+h2 {
+    color: red;
+}
+a {
+    color: green;
+    font-size: 20px;
+}
+#sulka {
+    color: black;
+}
+.redText {
+    color: red;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+}

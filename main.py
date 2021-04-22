@@ -1,8 +1,34 @@
-# Complex
-# 1) magic method (+, -, /, *)
-# 2) return Complex ->
-# complex2 = Complex(2, 5)
-# complex3 = complex1 + complex2
-# 3) __str__
+import random
+
+wordlist =['apple', 'watermelon', 'grapafruit', 'banana']
+secret = random.choice(wordlist)
+guesses = 'aeiou'
+turns = 5
+
+while turns > 0:
+     missed = 0
+     for letter in secret:
+         if letter in guesses:
+             print (letter,end=' ')
+         else:
+           print ('_',end=' ')
+           missed += 1
+
+     print()
+
+     if missed == 0:
+         print ('\nYou win!')
+         break
+
+     guess = input('\nВведите букву:')
+     guesses += guess
+
+     if guess not in secret:
+         turns -= 1
+         if turns == 0:
+             print ('\n\nThe answer is', secret)
+
+
+
 
 

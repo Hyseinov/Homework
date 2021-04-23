@@ -1,32 +1,25 @@
 class BancAccount:
 
-    def __init__(self, _name, _balance):
-        self.name = _name
-        self.balance = _balance
+    def __init__(self, name, balance):
+        self._name = name
+        self._balance = balance
 
     @property
     def name(self):
-        return f"My accaunt:{self.name}"
-
-    @name.setter
-    def name(self):
-        return self.name
+        return f"My accaunt:{self._name}"
 
 
     @property
     def balance(self):
-        return f"My balance:{self.balance}"
-
-    @balance.setter
-    def balance(self, balance):
-        if self.balance > 0:
-            return self.balance
-        else:
+        if self._balance < 0:
             print(None)
+        else:
+            return f"My balance:{self._balance}"
+
 
 
 account = BancAccount("Adil", 9000)
-account.balance = - 95
-account.name = "Malik"
+account._balance = -95
+
 print(account.name)
 print(account.balance)
